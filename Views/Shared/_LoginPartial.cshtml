@@ -1,0 +1,40 @@
+﻿@using Microsoft.AspNet.Identity
+
+
+<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <a class="logo" href="/Home/Index"><img src="~/Content/Images/Vrezzio.png"></a>
+</div>
+
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">       
+        <li><a href="#howto">How to</a></li>
+        <li><a href="#whyrezzio">Why VRezzio?</a></li>
+        <li><a href="#aboutus">About Us</a></li>
+    </ul>
+    @if (Request.IsAuthenticated)
+    {
+        using (Html.BeginForm("LogOff", "Home", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+        {
+            @Html.AntiForgeryToken()
+
+            <ul class="nav navbar-nav navbar-right login-register">
+                <li>
+                    @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+                </li>
+                <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+            </ul>
+        }
+    }
+    else
+    {
+        <ul class="nav navbar-nav navbar-right login-register">
+            <li>@Html.ActionLink("Log in", "Login", "Home", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+        </ul>
+    }
+</div>
+

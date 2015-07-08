@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Registration";
+    Layout = "/Views/Shared/_FormLayout.cshtml";
+}
+
+<div class="section-header page_registration">
+    <div class="Title">REGISTRATION</div>
+    <div class="Description">
+        <input class="hidden" id="type_Student" type="radio" name="type" checked />
+        <label for="type_Student"><span></span>Student</label>
+        <input class="hidden" id="type_University" type="radio" name="type" />
+        <label for="type_University"><span></span>University</label>
+        <form class="frm_University" role="form">
+            <div class="form-group">
+                <label for="inputdefault">Full name</label>
+                <input class="form-control" id="inputdefault" type="text">
+            </div>
+            <div class="form-group">
+                <label for="inputdefault">University name</label>
+                <input class="form-control" id="inputdefault" type="text">
+            </div>
+            <div class="form-group">
+                <label for="inputdefault">Email address</label>
+                <input class="form-control" id="inputdefault" type="text">
+            </div>
+            <div class="form-group">
+                <label for="inputdefault">Password</label>
+                <input class="form-control" id="inputdefault" type="text">
+            </div>
+            <div style="text-align:center;padding:20px;">
+                <a class="button">JOIN VREZZIO</a>
+            </div>
+        </form>
+        
+        <form class="frm_Student" role="form">
+            <div class="form-group">
+                <label for="inputdefault">Full name</label>
+                <input class="form-control" id="inputdefault" type="text">
+            </div>
+            <div class="form-group">
+                <label for="inputdefault">University name</label>
+                <select class="form-control" id="inputdefault">
+                    <option>Drexel University</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="inputdefault">Email address</label>
+                <input class="form-control" id="inputdefault" type="text">
+            </div>
+            <div class="form-group">
+                <label for="inputdefault">Password</label>
+                <input class="form-control" id="inputdefault" type="text">
+            </div>
+            <div style="text-align:center;padding:20px;">
+                <a class="button">JOIN VREZZIO</a>
+            </div>
+        </form>
+    </div>
+    <div class="form">
+
+    </div>
+</div>
+
+
+
+

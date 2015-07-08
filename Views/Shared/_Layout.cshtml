@@ -1,0 +1,58 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - VRezzio</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">            
+            @Html.Partial("_LoginPartial")
+        </div>
+    </div>
+    <div class="BodyHomePage">
+        @RenderBody()        
+    </div>
+    <footer class="container spacing50">
+        <hr />
+        <ul class="spacing20">
+            <li><a>About Us</a></li>
+            <li><a>Why VRezzio?</a></li>
+            <li><a>FAQ</a></li>
+            <li><a>Support</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+        <span >&#169; Vrezzio all right reserved</span>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script>
+        $(document).ready(function () {
+            var windowH = $(window).height();
+            var configDimension = function () {
+                var headerH = $("div.navbar.navbar-inverse").outerHeight();
+                var documentH = $(document).height();
+                var sight = windowH - headerH;
+                var contentH = $("div.row1 .content").height();
+                $("div.Drow").css({ marginTop: headerH });
+                $("body").css({ marginTop: headerH });
+                $(".row1>.container").css({ height: sight });
+            }
+
+            configDimension();
+
+            $(window).resize(function () {
+                configDimension();
+            });
+            
+        })
+    </script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,215 @@
+﻿.main-content{
+    margin-bottom:60px;    
+}
+.main-content >.container{
+    padding-bottom:40px;
+    border-radius:5px;
+    box-shadow : 0px 5px rgba(10,10,10,0.2);
+}
+.section-header{
+    width:550px;
+    margin:50px auto ;   
+}
+.padleft0{
+    padding-left :0px;
+}
+.padright0{
+    padding-right:0px;
+}
+.button-mini{
+    margin-left:6px;
+    padding:5px 8px;
+    background-color:rgba(3,178,168,1);
+    color:white;
+    border-radius:3px;
+    cursor:pointer;
+    font-size:10px;
+}
+.button{
+    padding:10px 48px;
+    font-weight:600;
+    background-color:rgba(3,178,168,1);
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+.section-header .Title{
+    background-color:rgba(137,207,205,1);
+    color:white;
+    padding:10px 20px;
+    text-align:center;
+    border-radius:5px;
+    font-size:28px;
+    font-weight:500;
+    text-shadow:3px 2px rgba(20,20,20,0.5)
+}
+
+
+/*registrator form*/
+.page_registration label{
+    padding:12px 10px;
+    font-size:18px;
+}
+.page_registration label span{
+    margin-right:10px;
+    display:inline-block;
+    height:10px;
+    width:10px;
+    border:1px solid rgba(10,10,10,0.3);
+}
+
+.page_registration input#type_Student:checked+label[for="type_Student"]{
+    color:rgba(72,193,183,1);
+}
+.page_registration input#type_Student:checked~form.frm_Student{
+    display:block;
+}
+.page_registration input#type_Student:checked+label[for="type_Student"]>span{
+    background-color:rgba(72,193,183,1);
+}
+.page_registration input#type_University:checked+label[for="type_University"]{
+    color:rgba(72,193,183,1);
+}
+.page_registration input#type_University:checked~form.frm_University{
+    display:block;
+}
+.page_registration input#type_University:checked+label[for="type_University"]>span{
+    background-color:rgba(72,193,183,1);
+}
+
+.Description form{
+    display:none;
+    text-align:left;
+}
+/*---------end----------*/
+/* student step 1*/
+.page_step1 .Description>h3
+,.page_step1 .Description>p{
+    margin: 15px 0px;
+    color:rgba(72,193,183,1);
+}
+.page_step1 .Description p{
+    font-weight:500;
+    font-style:italic;
+}
+.page_step1 .Description >h3{
+    text-align:center;
+}
+.page_step1 .frm_Step1{
+    position:relative;
+}
+label#Submit{
+    display:none;
+}
+label#Submit,label[for="next"]{
+    position:absolute;
+    bottom:-70px;
+    right:0px;
+}
+label[for="back"]{
+    display:none;
+    position:absolute;
+    bottom:-70px;
+    left:0px;
+}
+.Step1_2{
+    display:none;
+}
+.page_step1 input#next:checked+label[for="next"]
+{
+    display:none;
+}
+.page_step1 input#next:checked~label[for="back"]
+{
+    display:inline-block;
+}
+.page_step1 input#next:checked~label#Submit
+{
+    display:inline-block;
+}
+
+.page_step1 input#next:checked~div.Step1_1{
+    display:none;
+} 
+.page_step1 input#next:checked~div.Step1_2{
+    display:block;
+} 
+
+/*---------end----------*/
+/* student step 2*/
+.page_step2 .Description h3
+,.page_step2 .Description p{
+    text-align:center;
+    color:rgba(72,193,183,1);
+}
+
+.page_step2 .Description p{
+    font-style:italic;
+    font-weight:500;
+    font-size:16px;
+}
+.script h2{
+    font-weight:bold;
+}
+.script h4{
+    font-weight:bold;
+}
+.script p {
+    font-size:15px;
+    font-weight:500;
+}
+.script ul.listing li{
+    padding-bottom:6px;
+}
+
+/*---------end----------*/
+/* student step 3*/
+.page_step3 .Description h3
+,.page_step3 .Description p{
+    text-align:center;
+    color:rgba(72,193,183,1);
+}
+
+.page_step3 .Description p{
+    font-style:italic;
+    font-weight:500;
+    font-size:16px;
+}
+
+/*---------end----------*/
+.information{
+    padding-bottom:30px;
+    border-radius:5px;
+    box-shadow : 0px 5px rgba(10,10,10,0.2);
+    height:100%;
+}
+.information>h2{
+    color:rgba(72,193,183,1);
+    font-weight:600;
+}
+.information table td{
+    padding:10px 4px;
+    font-weight:500;
+
+}
+.video{
+    padding-bottom:30px;
+    border-radius:5px;
+    box-shadow : 0px 5px rgba(10,10,10,0.2);
+}
+.information table tr td:nth-child(2){
+    color:rgba(72,193,183,1);
+}
+.introduction{
+    padding:40px;
+}
+
+.introduction{
+    font-size:15px;
+    font-weight:500;
+}
+p.activity>span{
+    color:rgba(72,193,183,1);
+    font-weight:600;
+    margin-right:14px;
+}

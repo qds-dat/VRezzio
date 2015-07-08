@@ -1,0 +1,343 @@
+﻿html, body {
+    margin: 0px;
+    padding: 0px;
+    color: rgb(95,95,95);
+    font-family: Roboto;
+}
+
+/*start css home page rows */
+.spacing20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.spacing50 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.spacing80 {
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.BodyHomePage .row1 {
+    background-color: #01B2A8;
+}
+.row1 .container {
+    position:relative;
+}
+.row1 .content {
+        display: inline-block;
+        width: 85%;
+        position: absolute;
+        bottom: 40px;
+        right: 0px;
+    }
+
+.row1 .background {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    height:100%;
+}
+
+    .row1 .background img {
+        position:absolute;
+        width: 14%;
+        min-width:70px;
+        max-width: 200px;
+    }
+    .row1 .background .step-prepare{
+        bottom:40px;
+    }
+    .row1 .background .step-record{
+        left:70px;
+        bottom:50%;
+    }
+    .row1 .background .step-edit{
+        bottom:60%;
+        right:40px;
+    }
+
+
+.content .image {
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    display: inline-block;
+    width: 60%;
+}
+
+.content .text {
+    position:absolute;
+    bottom:40px;
+    left:60px;
+    color: white;
+    display: inline-block;
+    width:40%;
+}
+
+.content .image img {
+    width: 100%;
+}
+
+.row1 .content .text .btn-GetStarted {
+    background-color: white;
+    color: #01B2A8;    
+}
+
+.row1 .text .btnD {
+    padding: 18px 36px;
+}
+
+.row1 .content .text .label {
+        text-shadow: 5px 4px rgba(0,0,0,0.2);
+        font-weight: bolder;
+        position: relative;
+        display: inline-block;
+        white-space: nowrap;
+    }
+
+@media (max-width: 2000px) {
+   
+    .row1 .content .text .label {
+        font-size: 52px;
+    }
+
+    .row1 .text .btn-GetStarted {
+        margin-left: 35px;
+        font-size: 22px;
+    }
+
+    .row1 .text .btnD {
+        padding: 18px 36px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .row1 .content .text .label {
+        font-size: 42px;
+    }
+
+    .row1 .text .btn-GetStarted {
+        margin-left: 25px;
+        font-size: 20px;
+    }
+
+    .row1 .text .btnD {
+        padding: 14px 28px;
+    }
+}
+
+@media (max-width: 990px) {
+    .row1 .content .text .label {
+        font-size: 30px;
+    }
+
+    .row1 .text .btn-GetStarted {
+        margin-left: 20px;
+        font-size: 16px;
+    }
+
+    .row1 .text .btnD {
+        padding: 14px 18px;
+    }
+}
+
+@media (max-width: 770px) {
+    .content .text{
+        left:0px;
+    }
+    .row1 .background {
+        height:60%;
+    }
+    .row1 .content{
+        width:100%;
+    }
+    .row1 .content .text .label {
+        font-size: 30px;
+    }
+
+    .row1 .text .btn-GetStarted {
+        margin-left: 20px;
+        font-size: 16px;
+    }
+
+    .row1 .text .btnD {
+        padding: 14px 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .row1 .content{
+        width:100%;
+        min-width:400px;
+    }
+    .row1 .content .text .label {
+        font-size: 18px;
+    }
+
+    .row1 .text .btn-GetStarted {
+        margin-left: 12px;
+        font-size: 12px;
+    }
+
+    .row1 .text .btnD {
+        padding: 6px 10px;
+    }
+}
+
+.BodyHomePage .row2 {
+}
+
+.BodyHomePage .row3 {
+}
+
+/*end css home page rows */
+
+/* start css footer */
+footer > span {
+    color: #01B2A8;
+}
+
+footer {
+    text-align: center;
+}
+
+    footer > ul {
+        margin: auto;
+        list-style: none;
+    }
+
+        footer > ul li {
+            display: inline;
+            padding: 6px;
+            cursor: pointer;
+        }
+
+            footer > ul li a {
+                color: inherit;
+            }
+
+                footer > ul li a, footer > ul li a:hover {
+                    font-size: 14px;
+                    text-decoration: none;
+                }
+/* end css footer */
+
+/* start css nav bar */
+.navbar {
+    background-color: white;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+    .navbar .container {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .navbar .navbar-header {
+        position: relative;
+        margin-right: 10px;
+    }
+/* start css logo */
+.navbar-header .logo {
+    position: relative;
+    display: inline-block;
+    height: 45px;
+    margin-left: 10px;
+}
+
+    .navbar-header .logo img {
+        height: 100%;
+    }
+/* end css logo */
+.navbar-nav {
+    margin-top: 10px;
+}
+
+ul.navbar-nav > li {
+    cursor: pointer;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: inherit;
+}
+
+ul.navbar-nav > li > a {
+    padding: 16px 15px 16px 15px;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+ul.navbar-nav > li a:hover {
+    background-color: inherit;
+    color: inherit;
+}
+
+ul.navbar-nav > li:hover, ul.navbar-nav > li:hover > a {
+    background-color: black;
+    color: white;
+}
+
+.navbar-inverse {
+    background-color: inherit;
+    border-color: inherit;
+}
+
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border-color: inherit;
+    }
+
+    .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+        background-color: white;
+    }
+
+    .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: black;
+    }
+
+.login-register {
+    color: #01B2A8;
+}
+/* end  css nav bar */
+
+/* start css common */
+ul.listing {
+    list-style-type: none;
+}
+
+    ul.listing li {
+        padding-left: 30px;
+        background-image: url("../Content/Images/icon-rhombus.png");
+        background-position-y: 2px;
+        background-repeat: no-repeat;
+        font-style: italic;
+    }
+/* start css common */
+
+/* start css get started */
+.btnD {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 16px 32px;
+    border-radius: 3px;
+}
+
+.btn-GetStarted {
+    background-color: #01B2A8;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+    .btn-GetStarted:hover {
+        color: white;
+        text-decoration: none;
+    }
+/* end css get started */

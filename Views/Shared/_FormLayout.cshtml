@@ -1,0 +1,44 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - VRezzio</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            @Html.Partial("_LoginPartial")
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            @RenderBody()
+        </div>      
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script>
+        $(document).ready(function () {
+            var windowH = $(window).height();
+            var configDimension = function () {
+                var headerH = $("div.navbar.navbar-inverse").outerHeight();
+                $("body").css({ marginTop: headerH });
+            }
+
+            configDimension();
+
+            $(window).resize(function () {
+                configDimension();
+            });
+
+        })
+    </script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

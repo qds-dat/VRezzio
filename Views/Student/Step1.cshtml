@@ -1,0 +1,95 @@
+﻿@{
+    ViewBag.Title = "Step 1";
+    Layout = "/Views/Shared/_FormLayout.cshtml";
+}
+
+<div class="section-header page_step1">
+    <form class="frm_Step1" role="form">
+        <input class="hidden" id="next" type="radio" name="type" checked />
+        <label class="button" for="next">Next Step</label>
+        <input class="hidden" id="back" type="radio" name="type" checked />
+        <label class="button" for="back">Previous Step</label>
+        <label class="button" id="Submit">Complete Step 1</label>
+        <div class="Step1_1">
+            <div class="Title">GENERAL INFORMATION</div>
+            <div class="Description">
+                <h3><b>Step 1 :</b> Preparation</h3>
+            </div>
+            <div class="Content">
+                <div class="form-group col-md-12">
+                    <label for="inputdefault">High school</label>
+                    <input class="form-control" id="inputdefault" type="text">
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="inputdefault">Phone number</label>
+                    <input class="form-control" id="inputdefault" type="text">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputdefault">SAT Score</label>
+                    <input class="form-control" id="inputdefault" type="text">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputdefault">GPA</label>
+                    <input class="form-control" id="inputdefault" type="text">
+                </div>
+                
+                <div class="form-group col-md-12">
+                    <label for="inputdefault">Address</label>
+                    <input class="form-control" id="inputdefault" type="text">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="inputdefault">City</label>
+                    <input class="form-control" id="inputdefault" type="text">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputdefault">State</label>
+                    <input class="form-control" id="inputdefault" type="text">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="Step1_2">
+            <div class="Title">SCRIPT</div>
+            <div class="Description">
+                <h3><b>Step 1 :</b> Preparation</h3>
+                <p>Here you will prepare what you are going to say during the video 
+                . You will be able to read off this script while recording</p>
+                <p>*Remember each section has time limit (entire video under 60s)</p>
+                <p>*Make sure each section flows - when you record they will be spoken together</p>
+            </div>
+            <div class="Content">
+                <div class="form-group col-md-12">
+                    <label >Introduction</label>
+                    <textarea class="form-control" id="inputdefault" ></textarea>
+                </div>
+                <div class="form-group col-md-12">
+                    <label>Activity 1</label> <label class="button-mini" for="Activity1">add photo</label>
+                    <input id="Activity1" class="hidden" type="file" />
+                    <textarea class="form-control" id="inputdefault"></textarea>
+                </div>
+                <div class="form-group col-md-12">
+                    <label>Activity 2</label> <label class="button-mini" for="Activity2">add photo</label>
+                    <input id="Activity2" class="hidden" type="file" />
+                    <textarea class="form-control" id="inputdefault"></textarea>
+                </div>
+                <div class="form-group col-md-12">
+                    <label>Activity 3</label> <label class="button-mini" for="Activity3">add photo</label>
+                    <input id="Activity3" class="hidden" type="file" />
+                    <textarea class="form-control" id="inputdefault"></textarea>
+                </div>
+                <div class="form-group col-md-12">
+                    <label>Conclusion</label> 
+                    <textarea class="form-control" id="inputdefault"></textarea>
+                </div>
+               
+            </div>
+        </div>      
+    </form>
+
+
+</div>
+
+
+
+
